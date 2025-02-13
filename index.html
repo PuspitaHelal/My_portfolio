@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Puspita Helal - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      
+        function toggleDetails(id) {
+            const section = document.getElementById(id);
+            if (section.classList.contains('hidden')) {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+        }
+    </script>
+   
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-white shadow-md py-8">
+        <div class="container mx-auto text-center">
+            <img src="puspi.jpg" alt="Puspita Helal" class="w-72 h-72 rounded-full mx-auto mb-4">
+
+            <h1 class="text-3xl font-bold text-gray-800">Puspita Helal</h1>
+            <p class="text-xl text-gray-600 mb-6">Software Engineer | BSc in CSE - Eastern University</p>
+            
+           
+        </div>
+    </header>
+
+    <section class="bg-white py-12 mt-8 shadow-lg">
+        <div class="container mx-auto text-center">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-4" onclick="toggleDetails('aboutMe')">About Me</button>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-4" onclick="toggleDetails('contactInfo')">Contact</button>
+          
+
+            <div id="aboutMe" class="text-lg text-gray-600 mx-4 md:mx-0 hidden">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">About Me</h2>
+                <p>Hello! I'm Puspita Helal, a passionate software engineer with a BSc in Computer Science and Engineering from Eastern University. I enjoy solving complex problems and developing efficient solutions through code. Feel free to check out my work on GitHub and explore my coding profiles on CList and StopStalk!</p>
+            </div>
+
+            <div id="contactInfo" class="text-lg text-gray-600 mx-4 md:mx-0 hidden">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Information</h2>
+                <p>If you'd like to get in touch, feel free to reach out via the following channels:</p>
+                <ul class="list-disc text-left mx-auto mt-4">
+                    <li>Email: <a href="mailto:puspita.helal0@gmail.com" class="text-blue-600">puspita.helal0@gmail.com</a></li>
+                    <li>GitHub: <a href="https://github.com/PuspitaHelal" target="_blank" class="text-blue-600">PuspitaHelal</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/puspita-helal-672593202" target="_blank" class="text-blue-600">Puspita Helal</a></li>
+                    <li>Facebook: <a href="https://www.facebook.com/puspita.helal.127" target="_blank" class="text-blue-600">Puspita Helal</a></li>
+                    <li>Clist: <a href="https://clist.by/coder/puspo001" target="_blank" class="text-blue-600 hover:text-blue-800">CList Profile</a></li>
+                   <li>StopStalk:<a href="https://www.stopstalk.com/user/profile/Puspita" target="_blank" class="text-blue-600 hover:text-blue-800">StopStalk Profile</a>
+                   </li> 
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6 mt-8 text-center">
+        <p>&copy; 2025 Puspita Helal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
